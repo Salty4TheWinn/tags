@@ -17,7 +17,10 @@
     });
 
     Promise.all([documentReady, dataReceived]).then(function () {
-        $('#lang').val(navigator.language).on('change', changeLocale);
+        var defaultLanguage = navigator.languages
+            ? navigator.languages[0]
+            : (navigator.language || navigator.userLanguage);
+        $('#lang').val(defaultLanguage).on('change', changeLocale);
         changeLocale();
     });
     
