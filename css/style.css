@@ -42,10 +42,9 @@ div.name {
 div.tags {
     font-size: 12px;
     line-height: 14px;
-    overflow: hidden;
 }
 span.tag {
-    margin-left: 5px;
+    margin-right: 5px;
 }
 span.tag.matched {
     color: green;
