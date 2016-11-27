@@ -241,7 +241,7 @@
     },
     {
         "code": "kamalakhan",
-        "name": "Ms. Marvel (Kamala Khan)",
+        "name": "Miss Marvel (Kamala Khan)",
         "class": "cosmic",
         "tags": ["Offensive: Raw Damage", "Hero", "Inhuman", "Champions", "A-Force"]
     },
@@ -315,7 +315,7 @@
         "code": "punisher",
         "name": "Punisher",
         "class": "skill",
-        "tags": ["Offensive: Damage OVer Time", "Hero", "Defenders"]
+        "tags": ["Offensive: Damage Over Time", "Hero", "Defenders"]
     },
     {
         "code": "quake",

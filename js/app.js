@@ -1,34 +1,50 @@
-(function ($) {
+(function ($, Promise) {
     
-    var availableTags = [];
-    var availableChampions = [];
+    var availableTags = {};
+    var availableChampions = {};
     
-    var tagsReceived = $.get('json/data.json').then(function (data) {
-        var uniqueTags = {};
+    var dataReceived = $.get('json/data.json').then(function (data) {
         data.forEach(function (champion) {
            champion.tags.forEach(function (tag) {
-               uniqueTags[tag] = 1;
-           })
+               availableTags[tag] = tag;
+           });
+           availableChampions[champion.code] = champion;
         });
-        availableTags = Object.keys(uniqueTags).sort();
-        availableChampions = data;
     });
           
     var documentReady = new Promise(function (resolve, reject) {
         $(resolve);
     });
 
-    Promise.all([documentReady, tagsReceived]).then(function () {
-        availableTags.forEach(function (tag) {
-            $('#tags').append('<option>'+tag+'</option>');
+    Promise.all([documentReady, dataReceived]).then(function () {
+        $('#lang').val(navigator.language).on('change', changeLocale);
+        changeLocale();
+    });
+    
+    function changeLocale(newLocale) {
+        var lang = $('#lang').val() || 'en';
+        $.get('json/translation.'+lang+'.json').then(function (data) {
+            Object.keys(availableTags).forEach(function (code) {
+                availableTags[code] = data.tag[code];
+            });
+            Object.keys(availableChampions).forEach(function (code) {
+                availableChampions[code].name = data.champion[code];
+            });
+            setupCombo();
+        });
+    }
+    
+    function setupCombo() {
+        $('#tags').empty();
+        Object.keys(availableTags).forEach(function (code) {
+            $('#tags').append('<option value="'+code+'">'+availableTags[code]+'</option>');
         });
         $('#tags').multiselect({
             nonSelectedText: "Select some tags",
-            enableCaseInsensitiveFiltering: true,
             onChange: refreshList
         });
         refreshList();
-    });
+    }
     
     function refreshList() {
         var selectedOptions = $('#tags option:selected');
@@ -36,9 +52,9 @@
                 selectedOptions.each(function (index, elt) {
                     selectedTags.push($(elt).val());
                 });
-                var filteredChampions = availableChampions.filter(function (champion) {
+                var filteredChampions = Object.keys(availableChampions).filter(function (code) {
                     return selectedTags.every(function (selectedTag) {
-                        return champion.tags.includes(selectedTag);
+                        return availableChampions[code].tags.includes(selectedTag);
                     });
                 });
                 displayList(filteredChampions, selectedTags);
@@ -46,12 +62,13 @@
     
     function displayList(list, selectedTags) {
         $('#list').empty();
-        list.forEach(function (champion) {
-            displayChampion(champion, selectedTags);
+        list.forEach(function (code) {
+            displayChampion(code, selectedTags);
         });
     }
     
-    function displayChampion(champion, selectedTags) {
+    function displayChampion(code, selectedTags) {
+        var champion = availableChampions[code];
         var $div = $('<div class="champion">');
         $div.addClass(champion.class);
 
@@ -63,7 +80,7 @@
         
         $tags = $('<div class="tags">').appendTo($text);
         champion.tags.forEach(function (tag) {
-            $span = $('<span class="tag">').text('#'+tag).appendTo($tags);
+            $span = $('<span class="tag">').text('#'+availableTags[tag]).appendTo($tags);
             if(selectedTags.includes(tag)) {
                 $span.addClass('matched');
             }
@@ -71,4 +88,4 @@
         $('#list').append($div);
     }
     
-})(jQuery);
+})(jQuery, Promise);

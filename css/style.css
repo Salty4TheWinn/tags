@@ -48,5 +48,5 @@ span.tag {
     margin-left: 5px;
 }
 span.tag.matched {
-    color: lightgrey;
+    color: green;
 }
