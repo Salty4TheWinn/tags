@@ -20,7 +20,8 @@
         var defaultLanguage = navigator.languages
             ? navigator.languages[0]
             : (navigator.language || navigator.userLanguage);
-        $('#lang').val(defaultLanguage).on('change', changeLocale);
+            
+        $('#lang').val(defaultLanguage.substr(0,2)).on('change', changeLocale);
         changeLocale();
     });
     
