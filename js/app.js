@@ -40,7 +40,9 @@
     
     function setupCombo() {
         $('#tags').empty();
-        Object.keys(availableTags).forEach(function (code) {
+        Object.keys(availableTags).sort(function (a, b) {
+            return availableTags[a].localeCompare(availableTags[b]);
+        }).forEach(function (code) {
             $('#tags').append('<option value="'+code+'">'+availableTags[code]+'</option>');
         });
         $('#tags').multiselect({
@@ -52,16 +54,18 @@
     
     function refreshList() {
         var selectedOptions = $('#tags option:selected');
-                var selectedTags = [];
-                selectedOptions.each(function (index, elt) {
-                    selectedTags.push($(elt).val());
-                });
-                var filteredChampions = Object.keys(availableChampions).filter(function (code) {
-                    return selectedTags.every(function (selectedTag) {
-                        return availableChampions[code].tags.includes(selectedTag);
-                    });
-                });
-                displayList(filteredChampions, selectedTags);
+        var selectedTags = [];
+        selectedOptions.each(function (index, elt) {
+            selectedTags.push($(elt).val());
+        });
+        var filteredChampions = Object.keys(availableChampions).filter(function (code) {
+            return selectedTags.every(function (selectedTag) {
+                return availableChampions[code].tags.includes(selectedTag);
+            });
+        }).sort(function (a, b) {
+            return availableChampions[a].name.localeCompare(availableChampions[b].name);
+        });
+        displayList(filteredChampions, selectedTags);
     }
     
     function displayList(list, selectedTags) {
