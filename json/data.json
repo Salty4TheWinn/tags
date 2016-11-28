@@ -1,499 +1,416 @@
 [
     {
         "code": "abomination",
-        "name": "Abomination",
         "class": "science",
         "tags": ["Defensive: Tank", "Villain", "Chronos Corps"]
     },
     {
         "code": "agentvenom",
-        "name": "Agent Venom",
         "class": "skill",
         "tags": ["Offensive: Damage Over Time", "Hero", "Guardians of the Galaxy", "Symbiote"]
     },
     {
         "code": "antman",
-        "name": "Ant-Man",
         "class": "science",
         "tags": ["Defensive: Tank", "Hero", "Metal", "Civil War - Cpt. America"]
     },
     {
         "code": "beast",
-        "name": "Beast",
         "class": "mutant",
         "tags": ["Offensive: Raw Damage", "Hero", "X-Men", "Illuminati"]
     },
     {
         "code": "blackbolt",
-        "name": "Black Bolt",
         "class": "cosmic",
         "tags": ["Offensive: Raw Damage", "Hero", "Illuminati", "Inhuman"]
     },
     {
         "code": "blackpanther",
-        "name": "Black Panther",
         "class": "skill",
         "tags": ["Offensive: Damage Over Time", "Hero", "Illuminati", "Avengers"]
     },
     {
         "code": "blackpanthercivilwar",
-        "name": "Black Panther (Civil War)",
         "class": "skill",
         "tags": ["Defensive: Guard", "Hero", "Civil War - Iron Man"]
     },
     {
         "code": "blackwidow",
-        "name": "Black Widow",
         "class": "skill",
         "tags": ["Offensive: Burst", "Mercenary", "S.H.I.E.L.D", "Civil War - Iron Man", "Champions"]
     },
     {
         "code": "captainamerica",
-        "name": "Captain America",
         "class": "science",
        "tags": ["Defensive: Guard", "Hero", "Avengers", "S.H.I.E.L.D", "Civil War - Cpt. America"]
     },
     {
         "code": "captainamericawwii",
-        "name": "Captain America (WWII",
         "class": "science",
         "tags": ["Defensive: Guard", "Hero", "S.H.I.E.L.D"]
     },
     {
         "code": "captainmarvel",
-        "name": "Captain Marvel",
         "class": "cosmic",
         "tags": ["Offensive: Raw Damage", "Hero", "Avengers", "Kree", "A-Force"]
     },
     {
         "code": "civilwarrior",
-        "name": "Civil Warrior",
         "class": "tech",
         "tags": ["Defensive: Guard", "Hero", "Metal", "Civil War - Iron Man", "Civil War - Cpt. America"]
     },
     {
         "code": "colossus",
-        "name": "Colossus",
         "class": "mutant",
         "tags": ["Defensive: Guard", "Hero", "Metal", "X-Men", "X-Force"]
     },
     {
         "code": "crossbones",
-        "name": "Crossbones",
         "class": "skill",
         "tags": ["Offensive: Raw Damage", "Villain", "Metal"]
     },
     {
         "code": "cyclops",
-        "name": "Cyclops (New Xavier School)",
         "class": "mutant",
         "tags": ["Offensive: Burst", "Hero", "X-Men"]
     },
     {
         "code": "cyclops90s",
-        "name": "Cyclops (Blue Team)",
         "class": "mutant",
         "tags": ["Offensive: Burst", "Hero", "X-Men"]
     },
     {
         "code": "daredevil",
-        "name": "Daredevil (Classic)",
         "class": "skill",
         "tags": ["Offensive: Raw Damage", "Hero", "Defenders"]
     },
     {
         "code": "daredevilnetflix",
-        "name": "Daredevil",
         "class": "skill",
         "tags": ["Offensive: Raw Damage", "Hero", "Defenders"]
     },
     {
         "code": "deadpool",
-        "name": "Deadpool",
         "class": "mutant",
         "tags": ["Defensive: Utility", "Mercenary", "X-Men"]
     },
     {
         "code": "deadpoolxforce",
-        "name": "Deadpool (X-Force)",
         "class": "mutant",
         "tags": ["Offensive: Damage Over Time", "Mercenary", "X-Force"]
     },
     {
         "code": "drax",
-        "name": "Drax",
         "class": "cosmic",
         "tags": ["Offensive: Damage Over Time", "Hero", "Guardians of the Galaxy"]
     },
     {
         "code": "drstrange",
-        "name": "Doctor Strange",
         "class": "mystic",
         "tags": ["Control: Denial", "Hero", "Illuminati"]
     },
     {
         "code": "brothervoodoo",
-        "name": "Doctor Voodoo",
         "class": "mystic",
         "tags": ["Control: Denial", "Hero", "Avengers", "S.H.I.E.L.D"]
     },
     {
         "code": "electro",
-        "name": "Electro",
         "class": "science",
         "tags": ["Offensive: Burst", "Villain", "Sinister Six", "Thunderbolts"]
     },
     {
         "code": "elektra",
-        "name": "Elektra",
         "class": "skill",
         "tags": ["Offensive: Raw Damage", "Mercenary", "Defenders", "Thunderbolts"]
     },
     {
         "code": "falcon",
-        "name": "Falcon",
         "class": "skill",
         "tags": ["Control: Counter", "Hero", "Metal", "Civil War - Cpt. America"]
     },
     {
         "code": "gambit",
-        "name": "Gambit",
         "class": "mutant",
         "tags": ["Offensive: Burst", "Hero", "X-Men"]
     },
     {
         "code": "gamora",
-        "name": "Gamora",
         "class": "cosmic",
         "tags": ["Offensive: Burst", "Hero", "Metal", "Guardians of the Galaxy"]
     },
     {
         "code": "ghostrider",
-        "name": "Ghost Rider",
         "class": "mystic",
         "tags": ["Control: Counter", "Hero", "Defenders", "Thunderbolts", "Champions"]
     },
     {
         "code": "groot",
-        "name": "Groot",
         "class": "cosmic",
         "tags": ["Defensive: Tank", "Hero", "Guardians of the Galaxy"]
     },
     {
         "code": "guillotine",
-        "name": "Guillotine",
         "class": "mystic",
         "tags": ["Control: Counter", "Hero", "Metal"]
     },
     {
         "code": "hawkeye",
-        "name": "Hawkeye",
         "class": "skill",
         "tags": ["Offensive: Damage Over Time", "Hero", "Avengers", "S.H.I.E.L.D", "Civil War - Cpt. America"]
     },
     {
         "code": "hulk",
-        "name": "Hulk",
         "class": "science",
         "tags": ["Defensive: Tank", "Hero", "Illuminati", "Avengers"]
     },
     {
         "code": "hulkbuster",
-        "name": "Hulkbuster",
         "class": "tech",
         "tags": ["Defensive: Tank", "Hero", "Metal", "Avengers"]
     },
     {
         "code": "ironfist",
-        "name": "Iron Fist",
         "class": "mystic",
         "tags": ["Offensive: Burst", "Hero", "Defenders"]
     },
     {
         "code": "ironfistwhite",
-        "name": "Immortal Iron Fist",
         "class": "mystic",
         "tags": ["Offensive: Burst", "Hero", "New Avengers"]
     },
     {
         "code": "ironman",
-        "name": "Iron Man",
         "class": "tech",
         "tags": ["Defensive: Guard", "Hero", "Metal", "Avengers", "Civil War - Iron Man"]
     },
     {
         "code": "ironpatriot",
-        "name": "Iron Patriot",
         "class": "tech",
         "tags": ["Defensive: Guard", "Hero", "Metal", "Sinister Six", "Thunderbolts"]
     },
     {
         "code": "joefixit",
-        "name": "Joe Fixit",
         "class": "science",
         "tags": ["Defensive: Utility", "Villain", "Villain of the Contest"]
     },
     {
         "code": "juggernaut",
-        "name": "Juggernaut",
         "class": "mystic",
         "tags": ["Defensive: Tank", "Villain", "Thunderbolts"]
     },
     {
         "code": "kamalakhan",
-        "name": "Miss Marvel (Kamala Khan)",
         "class": "cosmic",
         "tags": ["Offensive: Raw Damage", "Hero", "Inhuman", "Champions", "A-Force"]
     },
     {
         "code": "karlmordo",
-        "name": "Mordo",
         "class": "mystic",
         "tags": ["Control: Counter", "Villain"]
     },
     {
         "code": "karnak",
-        "name": "Karnak",
         "class": "skill",
         "tags": ["Offensive: Raw Damage", "Mercenary", "Inhuman"]
     },
     {
         "code": "loki",
-        "name": "Loki",
         "class": "mystic",
         "tags": ["Control: Denial", "Villain", "Villain of the Contest"]
     },
     {
         "code": "lukecage",
-        "name": "Luke Cage",
         "class": "science",
         "tags": ["Defensive: Guard", "Mercenary", "Defenders", "Thunderbolts"]
     },
     {
         "code": "magik",
-        "name": "Magik", 
         "class": "mystic",
         "tags": ["Control: Denial", "Hero", "X-Men", "S.H.I.E.L.D"]
     },
     {
         "code": "magneto",
-        "name": "Magneto",
         "class": "mutant",
         "tags": ["Offensive: Damage Over Time", "Villain", "Illuminati", "X-Force"]
     },
     {
         "code": "magnetomarvelnow",
-        "name": "Magneto (Marvel Now!)",
         "class": "mutant",
         "tags": ["Offensive: Damage Over Time", "Hero", "X-Men"]
     },
     {
         "code": "moonknight",
-        "name": "Moon Knight",
         "class": "skill",
         "tags": ["Offensive: Raw Damage", "Mercenary", "Defenders"]
     },
     {
         "code": "msmarvel",
-        "name": "Ms. Marvel",
         "class": "cosmic",
         "tags": ["Offensive: Raw Damage", "Hero", "Avengers", "Kree", "A-Force"]
     },
     {
         "code": "nightcrawler",
-        "name": "Nightcrawler",
         "class": "mutant",
         "tags": ["Defensive: Utility", "Hero", "X-Men"]
     },
     {
         "code": "phoenix",
-        "name": "Phoenix",
         "class": "cosmic",
         "tags": ["Offensive: Burst", "Hero", "X-Men"]
     },
     {
         "code": "punisher",
-        "name": "Punisher",
         "class": "skill",
         "tags": ["Offensive: Damage Over Time", "Hero", "Defenders"]
     },
     {
         "code": "quake",
-        "name": "Quake",
         "class": "science",
         "tags": ["Offensive: Raw Damage", "Hero", "Inhuman", "S.H.I.E.L.D"]
     },
     {
         "code": "redhulk",
-        "name": "Red Hulk",
         "class": "science",
         "tags": ["Offensive: Damage Over Time", "Villain", "Thunderbolts"]
     },
     {
         "code": "rhino",
-        "name": "Rhino",
         "class": "science",
         "tags": ["Defensive: Tank", "Villain", "Sinister Six"]
     },
     {
         "code": "rocket",
-        "name": "Rocket Raccoon",
         "class": "tech",
         "tags": ["Offensive: Burst", "Hero", "Guardians of the Galaxy"]
     },
     {
         "code": "rogue",
-        "name": "Rogue",
         "class": "mutant",
         "tags": ["Control: Counter", "Hero", "X-Men", "A-Force"]
     },
     {
         "code": "ronan",
-        "name": "Ronan",
         "class": "cosmic",
         "tags": ["Control: Counter", "Villain", "Kree"]
     },
     {
         "code": "scarletwitch",
-        "name": "Scarlet Witch",
         "class": "mystic",
         "tags": ["Control: Denial", "Hero", "Avengers", "Civil War - Cpt. America", "A-Force"]
     },
     {
         "code": "shehulk",
-        "name": "She-Hulk",
         "class": "science",
         "tags": ["Offensive: Raw Damage", "Hero", "A-Force"]
     },
     {
         "code": "spidergwen",
-        "name": "Spider-Gwen",
         "class": "science",
         "tags": ["Defensive: Utility", "Hero"]
     },
     {
         "code": "spiderman",
-        "name": "Spider-Man (Classic)",
         "class": "science",
         "tags": ["Defensive: Utility", "Hero", "New Avengers", "Civil War - Iron Man"]
     },
     {
         "code": "spidermanblack",
-        "name": "Spider-Man (Symbiote)",
         "class": "cosmic",
         "tags": ["Defensive: Utility", "Hero", "Symbiote"]
     },
     {
         "code": "spidermanmorales",
-        "name": "Spider-Man (Miles Morales)",
         "class": "science",
         "tags": ["Control: Denial", "Hero", "New Avengers", "Champions"]
     },
     {
         "code": "starlord",
-        "name": "Star-Lord",
         "class": "tech",
         "tags": ["Offensive: Damage Over Time", "Hero", "Guardians of the Galaxy"]
     },
     {
         "code": "storm",
-        "name": "Storm",
         "class": "mutant",
         "tags": ["Offensive: Burst", "Hero", "X-Men", "X-Force"]
     },
     {
         "code": "superiorironman",
-        "name": "Superior Iron Man",
         "class": "cosmic",
         "tags": ["Defensive: Guard", "Hero", "Illuminati"]
     },
     {
         "code": "thevision",
-        "name": "Vision (Age of Ultron)",
         "class": "tech",
         "tags": ["Control: Denial", "Hero", "Metal", "Robot", "Avengers", "Civil War - Iron Man"]
     },
     {
         "code": "thor",
-        "name": "Thor",
         "class": "cosmic",
         "tags": ["Offensive: Burst", "Hero", "Avengers", "Chronos Corps"]
     },
     {
         "code": "thorjanefoster",
-        "name": "Thor (Jane Foster)",
         "class": "mystic",
         "tags": ["Offensive: Burst", "Hero", "New Avengers"]
     },
     {
         "code": "ultron",
-        "name": "Ultron",
         "class": "tech",
         "tags": ["Defensive: Utility", "Villain", "Metal", "Robot", "Villain of the Contest"]
     },
     {
         "code": "ultronclassic",
-        "name": "Ultron (Classic)",
         "class": "tech",
         "tags": ["Defensive: Utility", "Villain", "Metal", "Robot"]
     },
     {
         "code": "unstoppablecolossus",
-        "name": "Unstoppable Colossus",
         "class": "mystic",
         "tags": ["Defensive: Utility", "Villain", "Metal", "X-Men"]
     },
     {
         "code": "venom",
-        "name": "Venom",
         "class": "cosmic",
         "tags": ["Defensive: Tank", "Villain", "Symbiote", "Chronos Corps"]
     },
     {
         "code": "venompool",
-        "name": "Venompool",
         "class": "cosmic",
         "tags": ["Control: Counter", "Villain", "Symbiote"]
     },
     {
         "code": "vision",
-        "name": "Vision",
         "class": "tech",
         "tags": ["Control: Denial", "Hero", "Metal", "Robot", "Avengers"]
     },
     {
         "code": "warmachine",
-        "name": "War Machine",
         "class": "tech",
         "tags": ["Offensive: Damage Over Time", "Hero", "Metal", "Civil War - Iron Man"]
     },
     {
         "code": "wintersoldier",
-        "name": "Winter Soldier",
         "class": "skill",
         "tags": ["Offensive: Raw Damage", "Mercenary", "Metal", "Civil War - Cpt. America"]
     },
     {
         "code": "wolverine",
-        "name": "Wolverine",
         "class": "mutant",
         "tags": ["Defensive: Utility", "Hero", "Metal", "X-Men", "New Avengers", "X-Force"]
     },
     {
         "code": "wolverineoldman",
-        "name": "Old Man Logan",
         "class": "mutant",
         "tags": ["Offensive: Burst", "Hero", "Metal", "X-Men"]
     },
     {
         "code": "x23",
-        "name": "Wolverine (X-23)",
         "class": "mutant",
         "tags": ["Offensive: Damage Over Time", "Hero", "Metal", "Thunderbolts", "X-Force"]
     },
     {
         "code": "yellowjacket",
-        "name": "Yellowjacket",
         "class": "science",
         "tags": ["Control: Denial", "Villain", "Metal", "Villain of the Contest"]
     }

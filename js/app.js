@@ -1,4 +1,6 @@
-(function ($, Promise) {
+/* global Promise */
+
+(function ($) {
     
     var availableTags = {};
     var availableChampions = {};
@@ -11,10 +13,8 @@
            availableChampions[champion.code] = champion;
         });
     });
-          
-    var documentReady = new Promise(function (resolve, reject) {
-        $(resolve);
-    });
+    
+    var documentReady = new Promise($);
 
     Promise.all([documentReady, dataReceived]).then(function () {
         var defaultLanguage = navigator.languages
@@ -25,7 +25,7 @@
         changeLocale();
     });
     
-    function changeLocale(newLocale) {
+    function changeLocale() {
         var lang = $('#lang').val() || 'en';
         $.get('json/translation.'+lang+'.json').then(function (data) {
             Object.keys(availableTags).forEach(function (code) {
@@ -92,4 +92,4 @@
         $('#list').append($div);
     }
     
-})(jQuery, Promise);
+})(jQuery);
